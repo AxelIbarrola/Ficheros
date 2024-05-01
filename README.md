@@ -9,5 +9,5 @@ Dado el fichero temperaturas.txt con 12 filas(meses) y 31 columnas(temperaturas 
 Consejo: Guarda el fichero en la misma carpeta en la que vas a escribir tu código. Asi evitarás
 problemas de rutas relativas/absolutas.
 
-CRÉDITOS
+CRÉDITOS: 
 Este ejercicio fue seleccionado del libro "Aprende Python" escrito por Sergio Delgado Quintero.
