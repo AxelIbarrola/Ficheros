@@ -1,3 +1,5 @@
+MANEJO DE FICHEROS CON PYTHON
+
 EJERCICIO
 
 Dado el fichero temperaturas.txt con 12 filas(meses) y 31 columnas(temperaturas de cada día), se pide:
