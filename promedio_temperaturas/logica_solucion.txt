@@ -1,0 +1,7 @@
+1. Leer linea a linea a traves de una iteracion el documento "temperaturas".
+2. Limpiar cada linea con el metodo strip() para que se eliminen los "\n".
+3. Transformar cada linea en una lista mediante el metodo split().
+4. Transformar en numeros cada string de la lista a traves de una iteracion.
+5. Recorrer cada línea con la temperatura pasada a enteros e ir sumando su valor a la variable "suma_temperaturas"
+6. Agregar el promedio (dividiendo la suma total de cada línea por 31) a la lista "promedios"
+7. Iterar la lista de promedios e ir agregando los valores a un nuevo archivo a través del método write()
