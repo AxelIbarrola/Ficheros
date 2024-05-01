@@ -1,0 +1,1 @@
+Créditos: EL ejercicio fue sacado del libro "Aprende Python" de Sergio Delgado Quintero. Capítulo 5. paginas 206-207
