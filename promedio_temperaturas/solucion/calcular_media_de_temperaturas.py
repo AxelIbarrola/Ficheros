@@ -1,26 +1,20 @@
-promedios = []
+PATH_ENTRADA = "./temperaturas.txt"
+PATH_SALIDA = "./media_temperaturas.txt"
 
-with open("./temperaturas.txt") as archivo_temperaturas:
+with open(PATH_ENTRADA) as archivo_temperaturas:
+    promedios = []
     
     for linea in archivo_temperaturas:
-        
-        linea.strip()
-        
-        temperaturas_formato_cadena = linea.split()
-        temperaturas_formato_enteros = []
-        suma_temperaturas = 0
-        
-        for cadena in temperaturas_formato_cadena:
-            temperaturas_formato_enteros.append(int(cadena))
-        
-        for temperatura in temperaturas_formato_enteros:
-            suma_temperaturas += temperatura
-        
-        promedios.append(f"{suma_temperaturas/31:.2f}")
-        
+        valores_temperaturas = linea.strip().split()
+        largo_valores = len(valores_temperaturas)
 
-with open("./media_temperaturas.txt", "w") as archivo_promedios:
-        
-    for promedio in promedios:
-        archivo_promedios.write(str(promedio) + "\n")
-        
+        suma_temperaturas = 0
+        for temperatura in valores_temperaturas:
+            suma_temperaturas += int(temperatura)/largo_valores
+
+        promedios.append(f"\n{suma_temperaturas:.2f}")
+    
+    promedios[0] = promedios[0].strip()
+
+    with open(PATH_SALIDA, "w") as archivo_promedios:
+        archivo_promedios.writelines(promedios)
